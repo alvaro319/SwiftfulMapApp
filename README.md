@@ -1,6 +1,7 @@
 ### Summary: Map App
 
-This app displays a map region for several locations. From the top of the app, the user can select an arrow to view other locations/cities. If a location/city is selected the map region is updated. The user also has the option to learn more about the currently selected location/city. 
+This app displays a map region for several locations. From the top of the app, the user can select an arrow to view other locations/cities to choose from. If a location/city is selected, the map region is updated. The user also has the option to learn more about the currently selected location/city. 
+
 App Features: 
 
 Technical features:
