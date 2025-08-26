@@ -15,7 +15,6 @@ class LocationsViewModel: ObservableObject {
     //All loaded locations
     @Published var locations: [Location]
     
-    //Nick called this mapLocation in hit tutorial video
     @Published var currentMapLocation: Location {
         //whenever this currentMapLocation has been updated to another location,
         //we also want to update the MapRegion within currentMapLocation
@@ -45,8 +44,9 @@ class LocationsViewModel: ObservableObject {
         let locations = LocationsDataService.locations
         self.locations = locations
         
-        //get the first location
-        self.currentMapLocation = locations.first!//shouldn't do this but since hardcoded....
+        //force unwrapping is a huge No-No but since we are hardcoding
+        //the locations, we unwrap.... never do this in production app
+        self.currentMapLocation = locations.first!//get the first location
         
         //initialize to blank map
         //self.mapRegion = .region(MKCoordinateRegion())
